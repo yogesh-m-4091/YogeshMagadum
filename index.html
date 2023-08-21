@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Oswald:wght@700&family=Poppins:ital,wght@0,400;0,500;0,600;1,300&display=swap");
+    </style>
+    <link rel="stylesheet" href="./index.css" />
+    <script>
+      const pair1 = () => {
+        if (document.getElementById("pair1").checked == true) {
+          document.getElementById("sl1").style.display = "content";
+          document.getElementById("sl2").style.display = "none";
+          document.getElementById("sl3").style.display = "none";
+        }
+      };
+      const pair2 = () => {
+        if (document.getElementById("pair2").checked == true) {
+          document.getElementById("sl1").style.display = "none";
+          document.getElementById("sl2").style.display = "content";
+          document.getElementById("sl3").style.display = "none";
+        }
+      };
+      const pair3 = () => {
+        if (document.getElementById("pair3").checked == true) {
+          document.getElementById("sl1").style.display = "none";
+          document.getElementById("sl2").style.display = "none";
+          document.getElementById("sl3").style.display = "content";
+        }
+      };
+    </script>
+  </head>
+  <body>
+    <div class="mainContainer">
+      <div class="containers">
+        <div class="container1">
+          <h4 class="heading">Bundle & Save</h4>
+        </div>
+        <div class="container3">
+          <div class="desc2">
+            <div class="desc prices">
+              <input type="radio" id="pair1" name="pair" onchange="pair1()" />
+              <div class="details">
+                <span class="lightfont">1 Pair</span>
+                <h5>DKK 195.00</h5>
+              </div>
+            </div>
+            <div class="discount discount2">
+              <span class="darkfont">50% OFF</span>
+            </div>
+          </div>
+
+          <div class="selection" id="sl1">
+            <div class="sizeAndColor">
+              <div class="selectdata">
+                <div class="size">Size</div>
+                <div class="color">Color</div>
+              </div>
+            </div>
+            <div class="first">
+              <div>#1</div>
+              <div class="size1">
+                <select name="" id="">
+                  <option value="">S</option>
+                  <option value="">M</option>
+                  <option value="">L</option>
+                </select>
+              </div>
+
+              <div class="clr1">
+                <select name="" id="">
+                  <option value="">Red</option>
+                  <option value="">Green</option>
+                  <option value="">Yellow</option>
+                </select>
+              </div>
+            </div>
+            <div class="second">
+              <div>#2</div>
+              <div class="size2">
+                <select name="" id="">
+                  <option value="">S</option>
+                  <option value="">M</option>
+                  <option value="">L</option>
+                </select>
+              </div>
+
+              <div class="clr2">
+                <select name="" id="">
+                  <option value="">Red</option>
+                  <option value="">Green</option>
+                  <option value="">Yellow</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container3">
+          <div class="desc2">
+            <div class="desc prices">
+              <input type="radio" id="pair2" name="pair" onchange="pair2()" />
+              <div class="details">
+                <span class="lightfont">2 Pair</span>
+                <h5>DKK 345.00</h5>
+              </div>
+              <div class="price"><s class="lightfont">DKK 195.00</s></div>
+            </div>
+            <div class="discount discount2">
+              <span class="color2">Most Popular</span>
+              <span class="darkfont">40% OFF</span>
+            </div>
+          </div>
+
+          <div class="selection" id="sl2">
+            <div class="sizeAndColor">
+              <div class="selectdata">
+                <div class="size">Size</div>
+                <div class="color">Color</div>
+              </div>
+            </div>
+            <div class="first">
+              <div>#1</div>
+              <div class="size1">
+                <select name="" id="">
+                  <option value="">S</option>
+                  <option value="">M</option>
+                  <option value="">L</option>
+                </select>
+              </div>
+
+              <div class="clr1">
+                <select name="" id="">
+                  <option value="">Red</option>
+                  <option value="">Green</option>
+                  <option value="">Yellow</option>
+                </select>
+              </div>
+            </div>
+            <div class="second">
+              <div>#2</div>
+              <div class="size2">
+                <select name="" id="">
+                  <option value="">S</option>
+                  <option value="">M</option>
+                  <option value="">L</option>
+                </select>
+              </div>
+
+              <div class="clr2">
+                <select name="" id="">
+                  <option value="">Red</option>
+                  <option value="">Green</option>
+                  <option value="">Yellow</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container3">
+          <div class="desc2">
+            <div class="desc prices">
+              <input type="radio" id="pair3" name="pair" onclick="pair3()" />
+              <div class="details">
+                <span class="lightfont">3 Pair</span>
+                <h5>DKK 528.00</h5>
+              </div>
+            </div>
+            <div class="discount discount2">
+              <span class="darkfont">60% OFF</span>
+            </div>
+          </div>
+
+          <div class="selection" id="sl3">
+            <div class="sizeAndColor">
+              <div class="selectdata">
+                <div class="size">Size</div>
+                <div class="color">Color</div>
+              </div>
+            </div>
+            <div class="first">
+              <div>#1</div>
+              <div class="size1">
+                <select name="" id="">
+                  <option value="">S</option>
+                  <option value="">M</option>
+                  <option value="">L</option>
+                </select>
+              </div>
+
+              <div class="clr1">
+                <select name="" id="">
+                  <option value="">Red</option>
+                  <option value="">Green</option>
+                  <option value="">Yellow</option>
+                </select>
+              </div>
+            </div>
+            <div class="second">
+              <div>#2</div>
+              <div class="size2">
+                <select name="" id="">
+                  <option value="">S</option>
+                  <option value="">M</option>
+                  <option value="">L</option>
+                </select>
+              </div>
+
+              <div class="clr2">
+                <select name="" id="">
+                  <option value="">Red</option>
+                  <option value="">Green</option>
+                  <option value="">Yellow</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container5">
+          <span class="color1">Free 2 Day Shipping</span>
+          <span>Total:<b>:DKK 360.00</b> </span>
+        </div>
+        <div class="container6"><button class="btn">+ Add to Cart</button></div>
+        <div class="container7">
+          <span class="copyright fontlight"><i>&copy Powered Pumper</i></span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
